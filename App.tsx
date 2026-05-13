@@ -1,24 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import AuthNavigator from './src/navigation/AuthNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Zouj 🤝</Text>
-    </View>
+    <NavigationContainer>
+      <AuthNavigator />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#E8503A',
-  },
-});
