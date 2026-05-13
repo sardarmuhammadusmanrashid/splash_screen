@@ -9,7 +9,7 @@ export default function SplashScreen({navigation}: any) {
       navigation.replace('Welcome');
     }, 2500);
     return () => clearTimeout(timer);
-  }, []);
+  }, [navigation]);
 
   return (
     <View style={styles.container}>
